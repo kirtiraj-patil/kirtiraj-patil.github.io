@@ -1,0 +1,10 @@
+@import 'tokens';
+
+.logo {
+    max-width: 8rem;
+    color: $color-on-base;
+    line-height: 1.2;
+    text-align: right;
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 100;
+}

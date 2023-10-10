@@ -1,0 +1,12 @@
+@import 'tokens';
+
+.root-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-highest;
+    width: 100%;
+    padding: 1rem 2rem;
+}
