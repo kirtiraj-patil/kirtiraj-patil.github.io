@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LandingContainerComponent } from './landing-container/landing-container.component';
-import { BgDesignComponent } from './bg-design/bg-design.component';
+import { LandingComponent } from './landing.component';
+import { NavComponent } from './nav/nav.component';
 
 
 
 @NgModule({
   declarations: [
-    LandingContainerComponent,
-    BgDesignComponent
+    LandingComponent,
+    NavComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    LandingContainerComponent
+    LandingComponent
   ]
 })
 export class LandingModule { }

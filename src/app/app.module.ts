@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LandingModule } from './landing/landing.module';
-import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +11,6 @@ import { HeaderModule } from './header/header.module';
   imports: [
     BrowserModule,
     LandingModule,
-    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
