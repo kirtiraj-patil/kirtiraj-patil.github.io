@@ -5,4 +5,10 @@
     height: 100vh;
     background: $color-base;
     color: $color-on-base;
+    display: flex;
+    flex-direction: column;
+
+    app-hero {
+        flex: 1;
+    }
 }

@@ -1,0 +1,16 @@
+.hero {
+    &__heading {
+        font-size: 10rem;
+        display: flex;
+        justify-content: center;
+
+        // &-left {
+        //     position: relative;
+        // }
+
+        // &-right {
+        //     font-size: 10rem;
+        //     position: relative;
+        // }
+    }
+}
