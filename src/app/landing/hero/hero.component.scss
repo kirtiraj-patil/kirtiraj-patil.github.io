@@ -11,6 +11,12 @@
         align-items: center;
         font-weight: 300;
     }
+
+    &__subtext {
+        text-align: center;
+        margin: 3rem 1rem 0;
+        font-size: 1.5rem;
+    }
 }
 
 @include sm-screen {

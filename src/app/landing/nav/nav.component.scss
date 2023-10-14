@@ -3,6 +3,10 @@
 
 .nav {
     display: none;
+
+    &__container {
+        padding: 0;
+    }
 }
 
 @include sm-screen {

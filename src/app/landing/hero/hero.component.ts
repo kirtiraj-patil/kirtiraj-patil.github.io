@@ -24,6 +24,12 @@ import {
         animate('1s 2s cubic-bezier(.17,.7,.51,1)', style({opacity: 1}))
       ])
     ]),
+    trigger('fadeInSubtext', [
+      transition(':enter', [
+        style({opacity: 0}),
+        animate('1s 4s linear', style({opacity: 1}))
+      ])
+    ]),
   ]
 })
 export class HeroComponent {
