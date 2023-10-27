@@ -1,4 +1,9 @@
 @import '@fontsource/ubuntu';
+@import "tokens";
+
+*:focus {
+    outline: 2px solid red;
+}
 
 #special {
     height: 100vh;

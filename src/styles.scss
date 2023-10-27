@@ -1,3 +1,4 @@
+@import 'tokens';
 /* You can add global styles to this file, and also import other style files */
 // Reset!!
 /*
@@ -16,6 +17,12 @@
   margin: 0;
 }
 
+
+*:focus {
+  outline: 2px solid $color-primary;
+  outline-offset: 0.75rem;
+}
+
 /*
     Typographic tweaks!
     3. Add accessible line-height
@@ -25,6 +32,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /*
