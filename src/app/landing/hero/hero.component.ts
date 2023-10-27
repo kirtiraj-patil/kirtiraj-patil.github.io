@@ -30,8 +30,31 @@ import {
         animate('1s 4s linear', style({opacity: 1}))
       ])
     ]),
+    trigger('upDown', [
+      state('up', style({
+        bottom: '20%'
+      })),
+      state('down',  style({
+        bottom: '15%'
+      })),
+      transition('up => down', [
+        animate('2s 0s ease-in-out')
+      ]),
+      transition('down => up', [
+        animate('2s 0s ease-in-out')
+      ]),
+    ])
   ]
 })
 export class HeroComponent {
+  onScrollDownButtonClick = () => {
+    const whatsSpecialSection = document.getElementById('special')
+    whatsSpecialSection?.scrollIntoView({ behavior: "smooth" })
+  }
 
+  isUp = true;
+
+  animationDone() {
+    this.isUp = !this.isUp;
+  }
 }

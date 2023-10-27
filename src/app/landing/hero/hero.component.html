@@ -4,4 +4,7 @@
         <span @fadeInName class="hero__heading-right">I'm Kirtiraj</span>
     </h1>
     <p @fadeInSubtext class="hero__subtext">And this is my minimal portfolio site!</p>
+    <button @fadeInSubtext [@upDown]="isUp ? 'up' : 'down'" (@upDown.done)="animationDone()" (click)="onScrollDownButtonClick()" class="hero__scroll-down">
+        <ng-icon name="heroChevronDownSolid" strokeWidth="10" size="24"></ng-icon>
+    </button>
 </div>

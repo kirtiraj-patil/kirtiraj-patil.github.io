@@ -1,8 +1,11 @@
 @import "mixins";
+@import "tokens";
 
 .hero {
+    position: relative;
     height: 100%;
     padding-top: 7rem;
+
     &__heading {
         text-align: center;
         font-size: 3rem;
@@ -17,11 +20,27 @@
         margin: 3rem 1rem 0;
         font-size: 1.5rem;
     }
+
+    &__scroll-down {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        padding: 0.75rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        border: none;
+        stroke: $color-on-primary;
+        stroke-width: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
+    }
 }
 
 @include sm-screen {
     .hero {
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 }
 

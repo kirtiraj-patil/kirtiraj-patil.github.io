@@ -12,7 +12,7 @@ import { LandingModule } from './landing/landing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    LandingModule,
+    LandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

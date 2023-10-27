@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgIconsModule } from '@ng-icons/core';
+import { heroChevronDownSolid } from '@ng-icons/heroicons/solid';
 import { LandingComponent } from './landing.component';
 import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
@@ -13,7 +15,8 @@ import { HeroComponent } from './hero/hero.component';
     HeroComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgIconsModule.withIcons({ heroChevronDownSolid })
   ],
   exports: [
     LandingComponent
