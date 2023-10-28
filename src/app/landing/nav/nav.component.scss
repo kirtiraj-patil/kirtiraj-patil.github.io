@@ -12,7 +12,7 @@
 @include sm-screen {
     .nav {
         display: block;
-        padding: 2rem;
+        padding: $padding-standard;
         &__container {
             display: flex;
             justify-content: center;

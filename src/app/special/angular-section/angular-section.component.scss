@@ -1,0 +1,78 @@
+@import "tokens";
+@import "mixins";
+
+.angular-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $padding-standard;
+    text-align: center;
+    color: $color-on-base;
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    p a {
+        padding: 0.25rem 0.5rem;
+        line-height: 1.75;
+        font-weight: 700;
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 1rem 0;
+
+        &:focus {
+            outline-offset: 0.1rem;
+        }
+    }
+
+    &__info {
+        margin-bottom: 1rem;
+
+        a {
+            color: $color-on-primary;
+            background-color: $color-primary;
+        }
+    }
+
+    &__surprise {
+        a {
+            color: $color-on-secondary;
+            background-color: $color-secondary;
+
+            &:focus {
+                outline-color: $color-secondary;
+            }
+        }
+    }
+}
+
+@include sm-screen {
+    .angular-section {
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        p a {
+            padding: 0.5rem 0.75rem;
+        }
+
+        &__info,
+        &__surprise {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include lg-screen {
+    .angular-section {
+        padding: $padding-large;
+
+        &__title {
+            font-size: 3rem;
+        }
+    }
+}
