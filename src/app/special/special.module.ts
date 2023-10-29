@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SpecialComponent } from './special.component';
 import { AngularSectionComponent } from './angular-section/angular-section.component';
+import { OtherComponent } from './other/other.component';
 
 
 
 @NgModule({
   declarations: [
     SpecialComponent,
-    AngularSectionComponent
+    AngularSectionComponent,
+    OtherComponent
   ],
   imports: [
     CommonModule
