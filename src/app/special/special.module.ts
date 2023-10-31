@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SpecialComponent } from './special.component';
 import { AngularSectionComponent } from './angular-section/angular-section.component';
 import { OtherComponent } from './other/other.component';
+import { ReactSectionComponent } from './react-section/react-section.component';
 
 
 
@@ -10,7 +11,8 @@ import { OtherComponent } from './other/other.component';
   declarations: [
     SpecialComponent,
     AngularSectionComponent,
-    OtherComponent
+    OtherComponent,
+    ReactSectionComponent
   ],
   imports: [
     CommonModule

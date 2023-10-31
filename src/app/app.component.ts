@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'host-app';
-
-  constructor() {
-    let yourModule = require('../assets/bundle.js');
-    console.log('***', yourModule.default)
-  }
 }
