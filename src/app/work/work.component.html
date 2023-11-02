@@ -1,0 +1,29 @@
+<div class="work-section">
+  <h2 class="work-section__title">My work in action</h2>
+  <div class="work-section__legend">
+    <app-legend-def [title]="'ReactJS'" [variant]="'react'"></app-legend-def>
+    <app-legend-def [title]="'NextJS'" [variant]="'next'"></app-legend-def>
+    <app-legend-def [title]="'Gatsby'" [variant]="'gatsby'"></app-legend-def>
+    <app-legend-def [title]="'Headless CMS'" [variant]="'wp'"></app-legend-def>
+  </div>
+  <div class="work-section__projects">
+    <div class="work-section__projects-list">
+      <p class="work-section__projects-list-title">Team projects</p>
+      <ul class="work-section__projects-list-container">
+        <app-project-item *ngFor="let project of work_data.team" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
+      </ul>
+    </div>
+    <div class="work-section__projects-list">
+      <p class="work-section__projects-list-title">Experience</p>
+      <ul class="work-section__projects-list-container">
+        <app-project-item *ngFor="let project of work_data.companies" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
+      </ul>
+    </div>
+    <div class="work-section__projects-list">
+      <p class="work-section__projects-list-title">Solo projects</p>
+      <ul class="work-section__projects-list-container">
+        <app-project-item *ngFor="let project of work_data.solo" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
+      </ul>
+    </div>
+  </div>
+</div>

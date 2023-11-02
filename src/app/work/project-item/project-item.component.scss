@@ -1,0 +1,17 @@
+@import "tokens";
+@import "mixins";
+
+.project-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  &__link {
+    color: inherit;
+  }
+
+  &__tag {
+    margin-left: 0.5rem;
+    @include legend;
+  }
+}

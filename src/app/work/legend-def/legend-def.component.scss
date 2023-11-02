@@ -1,0 +1,17 @@
+@import "tokens";
+@import "mixins";
+
+.legend-def {
+  display: flex;
+  align-items: center;
+
+  @include lg-screen {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__color {
+    margin-right: 0.5rem;
+
+    @include legend;
+  }
+}

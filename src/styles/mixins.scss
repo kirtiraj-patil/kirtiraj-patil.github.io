@@ -38,3 +38,25 @@
     font-size: 3rem;
   }
 }
+
+@mixin legend {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+
+  &--react {
+    background-color: $color-react;
+  }
+
+  &--gatsby {
+    background-color: $color-gatsby;
+  }
+
+  &--next {
+    background-color: $color-next;
+  }
+
+  &--wp {
+    background-color: $color-wp;
+  }
+}
