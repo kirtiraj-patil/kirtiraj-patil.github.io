@@ -1,0 +1,11 @@
+@import "tokens";
+
+.status {
+  &__todo {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px dashed $color-on-base;
+    border-radius: 50%;
+  }
+}

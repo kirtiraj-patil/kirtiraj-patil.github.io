@@ -1,0 +1,10 @@
+<div class="roadmap-section">
+  <h2 class="roadmap-section__title">Roadmap for portfolio</h2>
+  <div class="roadmap-section__milestones">
+    <app-milestone
+      *ngFor="let milestone of milestones"
+      [status]="milestone.status"
+      [title]="milestone.title"
+    ></app-milestone>
+  </div>
+</div>

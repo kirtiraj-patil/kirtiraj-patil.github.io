@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingModule } from './landing/landing.module';
 import { SpecialModule } from './special/special.module';
 import { WorkModule } from './work/work.module';
+import { RoadmapModule } from './roadmap/roadmap.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WorkModule } from './work/work.module';
     BrowserAnimationsModule,
     LandingModule,
     SpecialModule,
-    WorkModule
+    WorkModule,
+    RoadmapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

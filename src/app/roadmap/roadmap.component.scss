@@ -1,0 +1,14 @@
+@import "mixins";
+@import "tokens";
+
+.roadmap-section {
+  @include section-container;
+  background-color: $color-base;
+  color: $color-on-base;
+  text-align: left;
+
+  &__title {
+    @include section-title;
+    margin-bottom: 2rem !important;
+  }
+}

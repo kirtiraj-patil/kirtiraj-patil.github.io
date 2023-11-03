@@ -1,0 +1,15 @@
+<span class="status">
+  <ng-icon
+    *ngIf="status === 'done'"
+    name="heroCheckCircleSolid"
+    size="24"
+    color="lime"
+  ></ng-icon>
+  <ng-icon
+    *ngIf="status === 'in-progress'"
+    name="heroClockSolid"
+    size="24"
+    color="orange"
+  ></ng-icon>
+  <span *ngIf="status === 'todo'" class="status__todo"></span>
+</span>
