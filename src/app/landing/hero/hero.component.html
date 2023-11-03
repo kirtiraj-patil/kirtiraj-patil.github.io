@@ -1,10 +1,20 @@
 <div class="hero">
-    <h1 class="hero__heading">
-        <span @fadeInHi class="hero__heading-left">Hi,&nbsp;</span>
-        <span @fadeInName class="hero__heading-right">I'm Kirtiraj</span>
-    </h1>
-    <p @fadeInSubtext class="hero__subtext">And this is my minimal portfolio site!</p>
-    <button tabindex="-1" @fadeInSubtext [@upDown]="isUp ? 'up' : 'down'" (@upDown.done)="animationDone()" (click)="onScrollDownButtonClick()" class="hero__scroll-down">
-        <ng-icon name="heroChevronDownSolid" strokeWidth="10" size="24"></ng-icon>
-    </button>
+  <h1 class="hero__heading">
+    <span @fadeInHi class="hero__heading-left">Hi,&nbsp;</span>
+    <span @fadeInName class="hero__heading-right">I'm Kirtiraj</span>
+  </h1>
+  <p @fadeInSubtext class="hero__subtext">
+    And this is my minimal portfolio site!
+  </p>
+  <button
+    aria-label="go to next section"
+    tabindex="-1"
+    @fadeInSubtext
+    [@upDown]="isUp ? 'up' : 'down'"
+    (@upDown.done)="animationDone()"
+    (click)="onScrollDownButtonClick()"
+    class="hero__scroll-down"
+  >
+    <ng-icon name="heroChevronDownSolid" strokeWidth="10" size="24"></ng-icon>
+  </button>
 </div>

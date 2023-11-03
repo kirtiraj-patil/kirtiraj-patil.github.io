@@ -1,4 +1,4 @@
-<div class="work-section">
+<div id="work" class="work-section">
   <h2 class="work-section__title">My work in action</h2>
   <div class="work-section__legend">
     <app-legend-def [title]="'ReactJS'" [variant]="'react'"></app-legend-def>
@@ -9,7 +9,7 @@
   <div class="work-section__projects">
     <div class="work-section__projects-list">
       <p class="work-section__projects-list-title">Team projects</p>
-      <ul class="work-section__projects-list-container">
+      <div class="work-section__projects-list-container">
         <app-project-item
           [align]="'left'"
           *ngFor="let project of work_data.team"
@@ -17,11 +17,11 @@
           [url]="project.url"
           [tags]="project.tags"
         ></app-project-item>
-      </ul>
+      </div>
     </div>
     <div class="work-section__projects-list">
       <p class="work-section__projects-list-title">Experience</p>
-      <ul class="work-section__projects-list-container">
+      <div class="work-section__projects-list-container">
         <app-project-item
           [align]="'center'"
           *ngFor="let project of work_data.companies"
@@ -29,11 +29,11 @@
           [url]="project.url"
           [tags]="project.tags"
         ></app-project-item>
-      </ul>
+      </div>
     </div>
     <div class="work-section__projects-list">
       <p class="work-section__projects-list-title">Solo projects</p>
-      <ul class="work-section__projects-list-container">
+      <div class="work-section__projects-list-container">
         <app-project-item
           [align]="'right'"
           *ngFor="let project of work_data.solo"
@@ -41,7 +41,7 @@
           [url]="project.url"
           [tags]="project.tags"
         ></app-project-item>
-      </ul>
+      </div>
     </div>
   </div>
   <p class="work-section__subtext">

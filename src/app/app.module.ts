@@ -7,10 +7,12 @@ import { LandingModule } from './landing/landing.module';
 import { SpecialModule } from './special/special.module';
 import { WorkModule } from './work/work.module';
 import { RoadmapModule } from './roadmap/roadmap.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
