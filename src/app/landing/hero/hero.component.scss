@@ -2,66 +2,60 @@
 @import "tokens";
 
 .hero {
-    position: relative;
-    height: 100%;
-    padding-top: 7rem;
-    flex: 1;
+  position: relative;
+  height: 100%;
+  padding-top: 12rem;
+  flex: 1;
 
-    &__heading {
-        text-align: center;
-        font-size: 3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: 300;
-    }
+  &__heading {
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+  }
 
-    &__subtext {
-        text-align: center;
-        margin: 3rem 1rem 0;
-        font-size: 1.5rem;
-    }
+  &__subtext {
+    text-align: center;
+    margin: 3rem 1rem 0;
+    font-size: 1.5rem;
+  }
 
-    &__scroll-down {
-        position: absolute;
-        bottom: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        padding: 0.75rem;
-        border-radius: 50%;
-        background-color: $color-primary;
-        border: none;
-        stroke: $color-on-primary;
-        stroke-width: 4px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        cursor: pointer;
-    }
-}
-
-@include sm-screen {
-    .hero {
-        padding-top: 4rem;
-    }
+  &__scroll-down {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 0.75rem;
+    border-radius: 50%;
+    background-color: $color-primary;
+    border: none;
+    stroke: $color-on-primary;
+    stroke-width: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
 }
 
 @include lg-screen {
-    .hero {
-        padding-top: 5rem;
+  .hero {
+    padding-top: 5rem;
 
-        &__heading {
-            font-size: 10rem;
-            flex-direction: row;
-            justify-content: center;
+    &__heading {
+      font-size: 10rem;
+      flex-direction: row;
+      justify-content: center;
 
-            // &-left {
-            //     position: relative;
-            // }
+      // &-left {
+      //     position: relative;
+      // }
 
-            // &-right {
-            //     font-size: 10rem;
-            //     position: relative;
-            // }
-        }
+      // &-right {
+      //     font-size: 10rem;
+      //     position: relative;
+      // }
     }
+  }
 }
