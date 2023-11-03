@@ -10,19 +10,19 @@
     <div class="work-section__projects-list">
       <p class="work-section__projects-list-title">Team projects</p>
       <ul class="work-section__projects-list-container">
-        <app-project-item *ngFor="let project of work_data.team" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
+        <app-project-item [align]="'left'" *ngFor="let project of work_data.team" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
       </ul>
     </div>
     <div class="work-section__projects-list">
       <p class="work-section__projects-list-title">Experience</p>
       <ul class="work-section__projects-list-container">
-        <app-project-item *ngFor="let project of work_data.companies" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
+        <app-project-item [align]="'center'" *ngFor="let project of work_data.companies" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
       </ul>
     </div>
     <div class="work-section__projects-list">
       <p class="work-section__projects-list-title">Solo projects</p>
       <ul class="work-section__projects-list-container">
-        <app-project-item *ngFor="let project of work_data.solo" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
+        <app-project-item [align]="'right'" *ngFor="let project of work_data.solo" [title]="project.title" [url]="project.url" [tags]="project.tags"></app-project-item>
       </ul>
     </div>
   </div>

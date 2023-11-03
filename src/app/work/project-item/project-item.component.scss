@@ -4,14 +4,31 @@
 .project-item {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 0.5rem;
 
   &__link {
     color: inherit;
   }
 
+  &__tags {
+    display: flex;
+    &:first-child {
+      margin-right: 0.5rem;
+    }
+  }
+
   &__tag {
     margin-left: 0.5rem;
     @include legend;
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
   }
 }

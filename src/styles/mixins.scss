@@ -6,6 +6,12 @@
   }
 }
 
+@mixin md-screen {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
 @mixin sm-screen {
   @media (min-width: 480px) {
     @content;
@@ -40,6 +46,7 @@
 }
 
 @mixin legend {
+  display: block;
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;

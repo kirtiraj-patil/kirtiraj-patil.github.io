@@ -9,4 +9,5 @@ export class ProjectItemComponent {
   @Input() title: string = '';
   @Input() url: string = '';
   @Input() tags: string[] = [];
+  @Input() align: string = 'center';
 }
